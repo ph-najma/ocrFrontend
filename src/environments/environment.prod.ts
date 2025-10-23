@@ -1,4 +1,4 @@
 export const environmentProd = {
   production: true,
-  apiUrl: 'https://your-production-api.com/api', // Update with your production API URL
+  apiUrl: 'https://ocrbackend-mhqn.onrender.com/api', // Update with your production API URL
 };
