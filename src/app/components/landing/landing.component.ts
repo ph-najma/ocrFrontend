@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { environment } from '../../../environments/environment';
 interface AadhaarData {
   name?: string;
   aadhaarNumber?: string;
@@ -33,7 +34,7 @@ export class LandingComponent {
   errorMessage: string | null = null;
   successMessage: string | null = null;
 
-  private apiUrl = 'http://localhost:3000/api'; // Update with your backend URL
+  private apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
